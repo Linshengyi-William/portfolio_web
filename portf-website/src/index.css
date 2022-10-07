@@ -18,6 +18,8 @@
     --color-white: #fff;
     --color-light: rgba(255,255,255,0.6);
 
+    --transition: all 400ms ease;
+
     --container-width-lg:75%;
     --container-width-md:86%;
     --container-width-ms:90%
@@ -33,11 +35,27 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
+
+    background: linear-gradient(45deg, #1a7497, #4d9101, #ba15c9, #6e1027);
+    background-size: 400% 400%;
+    animation: gradient 10s linear infinite;
+    /* background: var(--color-bg);
     color: var(--color-white);
-    line-height: 1.7;
+    line-height: 1.7; */
     /*background-image: url(../src/assets/45degreee_fabric.webp);
     */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* --------------Geranal style------------ */
@@ -61,4 +79,72 @@ section {
 section > h2, section > h5{
     text-align: center;
     color: var(--color-light)
+}
+
+section > h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+a{
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover{
+    color:var(--color-white)
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor:pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+
+
+}
+.btn:hover{
+    background: var(--color-white);
+    color : var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--color-primary);
+    color:var(--color-bg);
+}
+
+img{
+    display: block;
+    width:100%;
+    object-fit:cover;
+}
+
+
+/* ----------media queries for differnet size of devices------------ */
+/* for ipad */ 
+@media screen and (max-width: 1024px ){
+    .container{
+        width:var(--container-width-md)
+    }
+    section {
+        margin-top:6rem;
+    }
+}
+/* for phone */
+@media screen and (max-width: 600px ){
+    .container{
+        width:var(--container-width-ms)
+    }
+    section > h2{
+        margin-bottom:2rem;
+    }
 }
