@@ -40,7 +40,6 @@ const Header = () => {
                 <h5>Hello I'm</h5> 
                 <h1>Linshengyi Sun</h1>
                 <h5 className="text-light">
-                 {/*  <span className={fadeProp.fade}>{WORDS_TO_ANIMATE[wordOrder]}</span>, I'm Julia. */}
                     Passionate CS New Grad with 3.8 GPA looking for job opportunities as <span className={fadeProp.fade}>{items[wordOrder]}</span>. 
                     Anything relates to technology!
                     {/* {stringItem.name}: Software Developer */}

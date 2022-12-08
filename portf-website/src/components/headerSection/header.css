@@ -42,11 +42,18 @@ header{
 
 }
 
+
 .fade-in {
+    color:var(--color-bg-variant);
+    font-weight:bolder;
+    font-size: large;
     transition: opacity 1.5s ease;
 }
 
 .fade-out {
+    color:var(--color-bg-variant);
+    font-weight:bolder;
+    font-size: large;
     opacity: 0;
     transition: opacity 1.5s ease;
 }
