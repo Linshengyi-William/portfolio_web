@@ -76,7 +76,7 @@ h1{
 }
 section {
     margin-top: 8rem;
-    height: 100vh;
+    height: auto;
 }
 
 section > h2, section > h5{
@@ -139,7 +139,9 @@ img{
         width:var(--container-width-md)
     }
     section {
-        margin-top:6rem;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 /* for phone */

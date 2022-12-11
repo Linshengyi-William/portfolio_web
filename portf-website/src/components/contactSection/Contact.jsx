@@ -3,7 +3,13 @@ import "./contact.css"
 import {HiOutlineMail} from "react-icons/hi"
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
+
+
 const Contact = () => {
+    const onSubmit = () => {
+    // Show the success message in a window
+            window.alert("Your submission was successful!");
+    };
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -34,7 +40,7 @@ const Contact = () => {
                     <input type="text" name='name' placeholder="Your Full Name" required/>
                     <input type = "email" placeholder="Your Email" required/>
                     <textarea name="message" rows='7' placeholder="Your Message" required></textarea>
-                    <button type="submit" className='btn btn-primary'>Send Message</button>
+                    <button type="submit" className='btn btn-primary' onClick={onSubmit}>Send Message</button>
 
                 </form>
             </div>

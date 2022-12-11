@@ -56,7 +56,7 @@ const about = () => {
                         games with my friend, going to workouts, and watching Netflix or Youtube with my girlfriend on the sofa. 
 
                     </p>
-                    <a href="#contact" className="btn btn-primary connect-button"> Let's Connect</a>                        
+                    {/* <a href="#contact" className="btn btn-primary connect-button"> Let's Connect</a>                         */}
                 </div>
             </div>
             
