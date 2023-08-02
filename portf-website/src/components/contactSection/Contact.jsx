@@ -15,8 +15,9 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_08rm8j8', 'template_yg6vd7d', form.current, '9zLGSAFF6rZ-H3LWn')
+        emailjs.sendForm('service_zt7851v', 'template_yg6vd7d', form.current, '9zLGSAFF6rZ-H3LWn')
         .then((result) => {
+
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
@@ -32,13 +33,13 @@ const Contact = () => {
                     <article className="contact_option">
                         <HiOutlineMail className="contact_option-icon"/>
                         <h4>Email</h4>
-                        <h5>w13801166064@gmail.com</h5>
-                        <a href="mailto:w13801166064@gmail.com">Send a message</a>
+                        <h5>linshengyisun@gmail.com</h5>
+                        <a href="mailto:linshengyisun@gmail.com">Send a message</a>
                     </article>    
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name='name' placeholder="Your Full Name" required/>
-                    <input type = "email" placeholder="Your Email" required/>
+                    <input type = "email" name='email' placeholder="Your Email" required/>
                     <textarea name="message" rows='7' placeholder="Your Message" required></textarea>
                     <button type="submit" className='btn btn-primary' onClick={onSubmit}>Send Message</button>
 

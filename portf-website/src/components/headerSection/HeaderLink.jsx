@@ -1,5 +1,5 @@
 import React from 'react'
-import RESUME from "../../assets/MyResume_WebDevFrontEnd.pdf"
+import RESUME from "../../assets/MyResume_WebDevFullStack.pdf"
 const HeaderLink = () => {
     return (
         <div className='header_link'>

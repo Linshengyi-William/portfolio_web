@@ -9,7 +9,7 @@ import $ from 'jquery'
 
 const FADE_INTERVAL_MS = 1750
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2
-const items = ['Software Developer','Frontend Developer','Full-Stack Developer','Techincal Writer','Project Manager','Data Analyst'];
+const items = ['Software Engineer','Frontend Developer','Full-Stack Engineer','Technical Consultant','Data Analyst', 'Data Scientist'];
 type FadeProp = { fade: 'fade-in' | 'fade-out' }
 const quotoSettings = {
 	"async": true,
@@ -83,7 +83,7 @@ const Header = () => {
                 <h5>Hello I'm</h5> 
                 <h1>Linshengyi Sun</h1>
                 <h5 className="text-light">
-                    Passionate CS New Grad with high GPA looking for job opportunities as <span className={fadeProp.fade}>{items[wordOrder]}</span>. 
+                    Master CS student @Rice seeking 2024 Summer Internship as <span className={fadeProp.fade}>{items[wordOrder]}</span>. 
                     Anything relates to technology!
                     {/* {stringItem.name}: Software Developer */}
                     </h5>
